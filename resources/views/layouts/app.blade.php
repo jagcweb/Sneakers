@@ -40,7 +40,6 @@
                             <div class="dropdown-content">
                                 <a href="{{route('products.all')."?gender=M"}}">All our products</a>
                                 <a href="{{route('products.all')."?gender=M&order=discount"}}">Offers</a>
-                                <a href="#">Most sold</a>
                             </div>
                         </div> 
                     </li>
@@ -51,7 +50,6 @@
                             <div class="dropdown-content">
                                 <a href="{{route('products.all')."?gender=W"}}">All our products</a>
                                 <a href="{{route('products.all')."?gender=M&order=discount"}}">Offers</a>
-                                <a href="#">Most sold</a>
                             </div>
                         </div> 
                     </li>
@@ -61,7 +59,6 @@
                             <div class="dropdown-content">
                                 <a href="{{route('products.all')."?gender=M&kids=1"}}">All our products</a>
                                 <a href="{{route('products.all')."?gender=M&kids=1&order=discount"}}">Offers</a>
-                                <a href="#">Most sold</a>
                             </div>
                         </div> 
                     </li>
@@ -72,7 +69,6 @@
                             <div class="dropdown-content">
                                 <a href="{{route('products.all')."?gender=W&kids=1"}}">All our products</a>
                                 <a href="{{route('products.all')."?gender=W&kids=1&order=discount"}}">Offers</a>
-                                <a href="#">Most sold</a>
                             </div>
                         </div> 
                     </li>

@@ -276,6 +276,7 @@ html, body{
     color: white;
     font-size: 25px;
     padding: 5px;
+    text-align:center;
 }
 
 #best-sellers .best img{
@@ -904,7 +905,8 @@ html, body{
 /* CART CARDS */
 
 #cart-content{
-    width: 100%;
+    width: 50%;
+    margin:0px auto;
     display: flex;
 }
 
@@ -1566,6 +1568,14 @@ html, body{
     color: #0e76a8!important;
 }
 
+
+
+@media screen and (max-width:1750px){
+    #cart-content{
+    width:60%;
+    }
+}
+
 @media screen and (max-width:1440px){
 
     #cats{
@@ -1599,6 +1609,10 @@ html, body{
     #cards-detail{
         width: 65%;
     }
+    
+        #cart-content{
+    width:70%;
+    }
 }
 
 @media screen and (max-width:1280px){
@@ -1629,6 +1643,15 @@ html, body{
     #cards-detail{
         width: 80%;
     }
+    
+    
+    #cart-content{
+        width:80%;
+    }
+    
+    #cart-info{
+        width:35%;
+    }
 
 }
 
@@ -1654,6 +1677,17 @@ html, body{
         width: 100%;
     }
 
+}
+
+@media screen and (max-width:1100px){
+
+#cart-content{
+        width:85%;
+    }
+    
+    
+    
+    
 }
 
 @media screen and (max-width:1024px){
@@ -1724,6 +1758,18 @@ html, body{
     
     #cards-detail{
         width: 90%;
+    }
+    
+    .cart-card div .delete-cart-item img{
+        width:3.5%;
+    }
+    
+    .cart-card div .more-and-less-disabled{
+        width:5%;
+    }
+    
+    .cart-card div a .more-and-less{
+        width:5%;
     }
 
 }
@@ -1825,6 +1871,9 @@ html, body{
         font-size: 21px;
     }
 
+#cart-content{
+        width:98%;
+    }
 
 }
 
@@ -1898,13 +1947,14 @@ html, body{
 
     .swip{
         width: 100%!important;
+        height:355px;
     }
 
     #home-cards-all, #alls{
         width:100%;
     }
 
-    .home-card-all{
+    .home-card-all, .all{
         width: 32%;
     }
 
@@ -1931,12 +1981,55 @@ html, body{
     #my-orders-cards h2{
         font-size: 18px;
     }
+    
+        
+    .cart-card .cesta{
+        font-size:17px;
+    }
+    
+    .cart-card h2{
+        font-size:18px;
+    }
+    
+    .cart-card .cart-size{
+         font-size:15px;
+    }
+    
+    .cart-card div span:first-child{
+        font-size:15px;
+    }
+    
+    .cart-card div .quantity{
+         font-size:15px;
+    }
+    
+    .cart-card div .more-and-less-disabled{
+        width:6.5%;
+    }
+    
+    .cart-card div a .more-and-less{
+        width:6.5%;
+    }
+    
+    #cart-info div h2{
+        font-size:18px;
+    }
+    
+    #cart-info div, #cart-info div span, #cart-info .shipping{
+        font-size:14px;
+    }
+    
+    #cart-info .total{
+        font-size:15px;
+    }
+    
 }
 
 @media screen and (max-width:767px){
     .filters{
         display: none;
     }
+    
 }
 
 @media screen and (max-width:680px){
@@ -1947,10 +2040,11 @@ html, body{
 
     #best-sellers .best span{
         font-size: 19px;
+        height:80px;
     }
 
     #best-sellers img{
-        width:250px;
+        width:220px;
     }
 
     .column-footer h3{
@@ -1970,7 +2064,29 @@ html, body{
     #cards-detail{
         width: 100%;
     }
+    
+    #cart-content{
+        flex-wrap:wrap;
+    }
+    
+    .cart-card .cesta{
+        text-align:center;
+        margin: 0px auto;
+    }
+    
+    #cart-cards{
+        width:95%;
+        margin:0px auto;
+    }
+    
+    #cart-info{
+        width:95%;
+        margin:0px auto;
+    }
 
+    #cart-info div h2{
+        font-size:25px;
+    }
 }
 
 
@@ -2007,10 +2123,25 @@ html, body{
     .address-card p{
         font-size: 14px;
     }
+    
+    
+    .home-card-all, .all{
+        width:31.6%;
+    }
 
 }
 
 @media screen and (max-width:570px){
+    
+    #best-sellers .best img{
+        width: 150px;
+        height: 210px;
+    }
+
+    #best-sellers .best span{
+        font-size: 17px;
+        height:70px;
+    }
 
     .swiper-detail {
         width: 290px;
@@ -2025,12 +2156,17 @@ html, body{
     .my-orders-card{
         width: 50%;
     }
+    
+    #cart-info div h2{
+        font-size:18px;
+    }
+    
 
 }
 
 @media screen and (max-width:480px){
     .dropdown-menu{
-        transform: translate3d(310px, 73px, 0px)!important;
+        left:20px!important;
     }
     .user-nav .nav-link{
         padding-left: 0px!important;
@@ -2054,6 +2190,7 @@ html, body{
 
     #best-sellers .best span{
         font-size: 14px;
+        height:60px;
     }
 
     #best-sellers .best a{
@@ -2088,6 +2225,11 @@ html, body{
     .home-card-all{
         width: 48%; 
         height: 325px;
+    }
+    
+    .all{
+        width: 48%; 
+        height: 365px;
     }
 
     .see-more{
@@ -2205,6 +2347,27 @@ html, body{
         margin-top: 30px;
         width: 95%;
     }
+    
+    .cart-card{
+        padding:10px;
+        height: auto;
+    }
+    
+    .cart-image{
+        height: auto;
+    }
+    
+    .cart-card div .delete-cart-item img{
+        width:4.2%;
+    }
+    
+    .cart-card div a .more-and-less{
+        width:7.5%;
+    }
+    
+    .cart-card div .more-and-less-disabled{
+        width:7.5%;
+    }
 }
 
 @media screen and (max-width:440px){
@@ -2213,8 +2376,6 @@ html, body{
     }
 
     .dropdown-menu{
-        left:auto!important;
-        right: 3%!important;
         min-width: 130px;
         width: 130px;
 
@@ -2274,9 +2435,18 @@ html, body{
         width: 90%;
         height: 430px;
     }
+    
+    .cart-card h2{
+        width:80%;
+        font-size:16px;
+    }
+    
+    .cart-card .cart-size, .cart-card div span:first-child, .cart-card div .quantity{
+        font-size:14px;
+    }
 
     
-    #footer .column-footer{
+    #footer .column-footer:nth-child(1), #footer .column-footer:nth-child(2){
         width: 100%;
     }
 }
@@ -2288,12 +2458,20 @@ html, body{
         margin: 0px;
         padding: 0px;
     }
+    
+    .cart-card div a .more-and-less{
+        width:9%;
+    }
+    
+    .cart-card div .more-and-less-disabled{
+        width:9%;
+    }
 }
 
 @media screen and (max-width:400px){
     .the-best{
-        min-height:45vh;
-        height: 45vh;
+        min-height:42vh;
+        height: 42vh;
     }
 
     #best-sellers{
@@ -2307,8 +2485,9 @@ html, body{
 
     #best-sellers .best span{
         font-size: 13px;
+        text-align: center;
     }
-
+    
     #best-sellers .best a{
         font-size: 15px;
         padding: 0px;
@@ -2323,6 +2502,7 @@ html, body{
 
     .home-card{
         padding: 0px;
+        height:320px;
     }
 
     #home-cards-all{
@@ -2331,18 +2511,25 @@ html, body{
     .home-card-all{
         width: 47%;
         padding: 0px;
+        height:318px;
+    }
+    
+    .all{
+        width: 47%;
+        padding: 0px;
+        height:355px;
     }
 
 
-    .home-card-all h2, .home-card h2{
+    .home-card-all h2, .home-card h2, .all h2{
         font-size: 15px;
     }
 
-    .home-card-all span, .home-card span{
+    .home-card-all span, .home-card span, .all span{
         font-size: 13px;
     }
 
-    .home-card-all p, .home-card p{
+    .home-card-all p, .home-card p, .all p{
         font-size: 15px;
     }
 
@@ -2371,14 +2558,38 @@ html, body{
         width: 100%;
         margin-bottom: 15px;
     }
+    
+    .cart-card h2{
+        width:90%;
+        font-size:15px;
+    }
+    
+    .cart-card .cart-size, .cart-card div span:first-child, .cart-card div .quantity{
+        font-size:13px;
+    }
+    
+    #cart-info div, #cart-info div span, #cart-info .shipping{
+        font-size:13px;
+    }
 }
 
 
+@media screen and (max-width:390px){
+
+.cart-card div a .more-and-less{
+        width:10.5%;
+    }
+    
+    .cart-card div .more-and-less-disabled{
+        width:10.5%;
+    }
+
+}
 
 @media screen and (max-width:380px){
 
     .swip{
-        height: 298px;
+        height: 315px;
     }
 
     .home-card{
@@ -2389,17 +2600,37 @@ html, body{
         height: 1180px;
     }
 
-    .home-card-all{
+    .home-card-all, .all{
         height: 285px;
     }
 
-    .home-card-all .card-image, .home-card .card-image{
+    .home-card-all .card-image, .home-card .card-image, .all .card-image2{
         height: 215px;
     }
 
     .swiper-detail{
         width: 90%;
         height: 370px;
+    }
+    
+    .cart-card div .delete-cart-item img{
+        width:15px;
+    }
+    
+    .cart-card div a .more-and-less{
+        width:17px;
+    }
+    
+    .cart-card div .more-and-less-disabled{
+        width:17px;
+    }
+    
+    .cart-card{
+        padding:0px;
+    }
+    
+    .cart-card:first-child{
+        padding:10px;
     }
 
 }
@@ -2447,7 +2678,8 @@ html, body{
     }
 
     #best-sellers .best span{
-        font-size: 11px;
+        font-size: 13px;
+        height:50px;
     }
 
     #best-sellers .best a{

@@ -6,7 +6,6 @@ Cart
 
 
 @section('content')
-<div class="container">
     @if(session('message'))
     <h1>{{session('message')}}</h1>
     @endif
@@ -72,6 +71,5 @@ Cart
                                                 @else
                                                 <p>The shopping cart is empty</p>
                                                 @endif
-                                                </div>
                                                 </div>
                                                 @endsection

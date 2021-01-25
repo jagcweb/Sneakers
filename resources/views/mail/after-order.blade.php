@@ -10,7 +10,7 @@
     <div>
         <strong>Address:</strong>
         <p>{{$order->address->name. " ".$order->address->surname1." ".$order->address->surname2}}</p>
-        <p>{{$order->address->address." (".$order->address->region." ,".$order->address->city.") "."CP: ".$order->address->postal_code}}</p>
+        <p>{{$order->address->address." (".$order->address->region.", ".$order->address->city.") "."CP: ".$order->address->postal_code}}</p>
     </div>
 
     <br/>

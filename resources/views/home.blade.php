@@ -17,15 +17,17 @@
         @endif
         <div class="the-best">
             <div id="best-sellers">
-                @foreach($best_sellers as $i=>$best)
+                @foreach($best_sellers as $index=>$best)
                 <div class="best">
-                    @foreach($best->product->product_images as $best_images)
-                    <img loading="lazy" src="{{url('product/'.$best_images->image)}}">
+                    @foreach($best->product->product_images as $i=>$best_images)
+                        @if($i<1)
+                            <img loading="lazy" src="{{url('product/'.$best_images->image)}}">
+                        @endif
                     @endforeach
                     <span>{{$best->product->brand." ".str_replace('-', ' ', $best->product->name)}}</span>
                     <a href="{{route('product.detail', ['brand' => $best->product->brand, 'name' => $best->product->name])}}">Buy</a>
                 </div>
-                @if($i<1)
+                @if($index<1)
                 <img loading="lazy" src="{{asset('img/best-sellers.png')}}"/>
 
                 @endif
@@ -47,7 +49,6 @@
             @endforeach
         </div>
 
-        <br/>
         <h1 data-aos="zoom-in-down" data-aos-anchor-placement="center-bottom" class="titles">New arrivals</h1>
         <div class="swiper-container swip  w-50 mx-auto">
             <!-- Additional required wrapper -->

@@ -130,8 +130,12 @@
         <span><s>{{$product->price}} €</s></span>
         <span class='discount'>-{{$product->discount}}%</span>
         <p>{{\CountCartItem::calcPriceWithDiscount($product->id)}} €</p>
-        @else
+        @elseif($product->discount>0 && count($product->stocks)<1)
         <span class='out-of-stock' style="padding: 0px;">Out of stock</span>
+          <span><s>{{$product->price}} €</s></span>
+        <p>{{\CountCartItem::calcPriceWithDiscount($product->id)}} €</p>
+        @else
+        <span></span>
         <p>{{$product->price}} €</p>
         @endif
     </div>

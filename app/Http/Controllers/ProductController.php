@@ -182,11 +182,6 @@ class ProductController extends Controller {
             'image.*' => ['image']
         ]);
 
-        if ($description != null) {
-            $validate = $this->validate($request, [
-                'description' => ['string'],
-            ]);
-        }
 
         $name_str = str_replace(' ', '-', $name);
 
@@ -198,7 +193,16 @@ class ProductController extends Controller {
             $product->price = $price;
             $product->gender = $gender;
             $product->discount = $discount;
+            
+            
+            if ($description != null) {
+            $validate = $this->validate($request, [
+                'description' => ['string'],
+            ]);
+            
             $product->description = $description;
+        }
+            
             $product->update();
 
             if ($child_box) {

@@ -36,7 +36,7 @@ This application is made up of numerous and diverse tables:
 
 -----------------------------------------------------------------------------------------------------------
 
-**Libraries:
+**Libraries:**
 
 - **AOS:** This library has been used for the effects of "loading" the elements of the application.
 
@@ -48,7 +48,7 @@ This application is made up of numerous and diverse tables:
 
 -----------------------------------------------------------------------------------------------------------
 
-**Dependencies:
+**Dependencies:**
 
 - Xamppp with PHP 8
 - MySQL
